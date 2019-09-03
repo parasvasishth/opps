@@ -1,0 +1,140 @@
+<script>function show1() {
+    f.t1.value="welcome";
+}
+function show2() {
+    f.t1.value="Hello";
+}
+</script>
+
+<form name="f">
+  <img src="" width=200 height=200 onmouseover="show1()" >
+  <img src="" width=200 200 height=200 onmouseover="show2()" >
+  <textarea name="t1" id="" cols="30" rows="10"></textarea>
+we can use this without form but we need form for browser conflictin
+</form>
+
+
+<script>
+  function show() {
+      var s=confirm("do you want to save?")
+      if(s)
+      {
+          location.href="https://www.google.com/"
+
+      }
+      else {
+          alert(s)
+      }
+  }
+</script>
+
+<input type="button" onclick="show()" value="clickme">
+
+<script>
+  function show() {
+      s=prompt("enter value");
+      alert(s);
+  }
+</script>
+<input type="button" onclick="show()" value="click me!">
+
+
+<script>
+  function show() {
+    a=parseInvaluet(f.t1.value);
+    //it will help to add with plus attrubute
+    b=f.t1.value;
+    f.t3.value=a+b;
+    f.t1.value=""
+  }
+</script>
+
+
+<form name="f">
+  Enter a <input type="text" name="t1"><br>
+  Enter b <input type="text" name="t2"><br>
+  Result <input type="text" name="t3"><br>
+  <input type="button" onclick="show()" value="click me">
+</form>
+
+
+<script>
+  function show() {
+      x=document.getElementById('aa').value;
+      document.getElementById('kk').innerText
+  }
+</script>
+
+<script>
+  function show() {
+      x=document.getElementById('aa').value;
+      document.getElementById('aa').value=x.toUpperCase();
+  }
+</script>
+
+<input type="text" id=aa onblur="show()">
+
+
+<script>
+  function show() {
+      x=document.getElementById('aa').value
+      f.t1.value=x;
+
+  }
+</script>
+<form name="f">
+  <input type="radio" id="aa" value="1000" onclick="show()">1000
+  <input type="text" name="t1"><br>
+</form>
+
+
+<script>
+  function timer() {
+      d=new Date();
+      h=d.getHours();
+      m=d.getMinutes();
+      s=d.getSeconds();
+    document.getElementById("aa").innerHTML=h+" : "+m+" : "+s;
+    setTimeout('timer()',1000)
+  }
+</script>
+
+<body onload="timer()">
+<div id="aa"></div>
+</body>
+
+
+
+<html>
+<head>
+  <script type="text/javascript">
+    function hello() {
+        alert("Hello my dear")
+    }
+  </script>
+</head>
+<body>
+<p>Click the following button and see the result</p>
+<form>
+  <input type="button" onclick="hello()" value="Say Hello">
+
+</form>
+</body>
+</html>
+
+
+
+<html>
+<head>
+  <script>
+    function  valid() {
+
+        return true
+    }
+  </script>
+</head>
+<form method="get" action="https://www.google.com/" onsubmit="return valid()">
+  <input type="submit" value="submit">
+</form>
+</html>
+

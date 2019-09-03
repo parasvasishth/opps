@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>three box copy paste</title>
+</head>
+<body>
+<form name="f">
+  <textarea name="x" id="x" cols="30" placeholder="Please Type Here!" rows="10"></textarea><br><br>
+  <textarea name="y" id="y" cols="30" placeholder="if you Click on cut the value shows here" rows="10"></textarea><br><br>
+  <textarea id="z" name="z" cols="30" placeholder="if you Click on copy the value shows here" rows="10"></textarea><br><br>
+<input type="button" name="cut" onclick="fun1()" value="cut" ></input>
+<button type="submit" name="copy" onclick="fun2()">Copy</button>
+<button type="submit" name="paste" onclick="show()">Paste</button>
+</form>
+</body>
+<script>
+    var x
+    // var y
+  function fun1() {
+      x = f.x.value
+      f.x.value=""
+
+  }
+  function fun2() {
+      // y = f.y.value
+      // f.y.value=""
+  }
+  function show() {
+
+        alert(x)
+  }
+
+</script>
+</html>

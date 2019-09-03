@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+    <title>Test</title>
+</head>
+<body>
+<form name="form" class="container" >
+  <div class="form-group">
+Enter first Value: <input type="text" name="input1" ><br>
+Enter Secount Value: <input type="text" name="input2"><br>
+Enter third Valur: <input type="text" name="input3"><br>
+Total of your inputs: <input type="text" onclick="fun1()" name="total"><br>
+avrage of your inputs: <input type="text" onclick="fun1()" name="avg"><br>
+<!--  <input type="button" onclick="fun1()" value="click me">-->
+  </div>
+
+</form>
+<p id="a"></p>
+<p id="b"></p>
+<p id="c"></p>
+</body>
+
+
+<script>
+  function fun1() {
+  let a=parseInt(form.input1.value)
+  let b=parseInt(form.input2.value)
+  let c=parseInt(form.input3.value)
+  form.total.value= a+b+c
+      form.avg.value =parseInt(form.total.value/3)
+
+if( form.avg.value>=70 ){
+    document.getElementById("a").innerHTML = "You got A+"
+}if (form.avg.value>=40  && form.avg.value<=60 )   {
+          document.getElementById("b").innerHTML = "You got B+"
+}else {
+          document.getElementById("c").innerHTML = "You got C+"
+      }
+
+
+  }
+</script>
+</html>
