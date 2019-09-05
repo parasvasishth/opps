@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+  for (i=1; i<=10;i++){
+      console.log(i)
+  }
+  //decriment
+  for (i=10;i>=1;i--){
+      console.log(i)
+  }
+</script>
+</html>
+
+
+example1
+<script>
+  function disp() {
+      var i;
+      document.write("<ol>")
+      for (i=1;i<=10;i++){
+          document.write("<br><li><b>i="+i)
+      }
+
+  }
+
+
+  // eaxmple2
+  function disp() {
+      var i;
+      for (i=1;i<=10;i++){
+          mydiv.innerHTML+="<br><li><b>"+i
+      }
+
+  }
+
+</script>
+<div id="mydiv">hello</div>
+<input type="button" value="click me" onclick="disp()">
+
+
+PRINT GIVIN NUMBER
+<script>
+  function disp(n) {
+      var i;
+      for (i=1;i<=10;i++){
+          document.write("<br>"+(n*i))
+      }
+
+  }
+</script>
+<input type="button" value="click me" onclick="disp(2)">
+
+write a program to define a number and the power of the number
+<script>
+  function disp(n,p) {
+      var i;
+      var r=1
+
+      for(i=1;i<=p;i++){
+          r=r*n
+      }
+      document.write("<h1>resutlt="+r)
+
+  }
+</script>
+<input type="button" value="click me" onclick="disp(2,4)">
+
+write a program to print seven star in 10 line using neting of loop
+
+<script>
+  function disp() {
+      var i,j
+for (i=1;i<=10;i++)     {
+    for (j=1;j<=7;j++){
+        document.write("*")
+    }
+    document.write("<br>")
+}
+  }
+</script>
+
+<input type="button" value="click me" onclick="disp()">
+
+
+write a program to print a alphabet H
+
+<script>
+  function disp() {
+      var i,j
+      for(i=1;i<=10;i++){
+          for (j=1;j<=7;j++){
+              document.write("*")
+          }
+          for (j=1;j<=7;j++){
+              if (i!=5)
+                  document.write("&nbsp;&nbsp;")
+              else
+                  document.write("*")
+          }
+          for (j=1;j<=7;j++){
+              document.write("*")
+          }
+          document.write("<br>")
+      }
+  }
+</script>
+
+<input type="button" v alue="click me" onclick="disp()">
+
+write a program to print a alphabet L
+write a program to print a alphabet P
+
+factorial of the givin numer
+
+table 2 and 5

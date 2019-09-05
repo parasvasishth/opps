@@ -9,27 +9,32 @@
   <textarea name="x" id="x" cols="30" placeholder="Please Type Here!" rows="10"></textarea><br><br>
   <textarea name="y" id="y" cols="30" placeholder="if you Click on cut the value shows here" rows="10"></textarea><br><br>
   <textarea id="z" name="z" cols="30" placeholder="if you Click on copy the value shows here" rows="10"></textarea><br><br>
-<input type="button" name="cut" onclick="fun1()" value="cut" ></input>
-<button type="submit" name="copy" onclick="fun2()">Copy</button>
-<button type="submit" name="paste" onclick="show()">Paste</button>
+<input type="button" name="cut" onclick="fun1()" value="cut" >
+<input type="submit" name="copy" onclick="fun2()" value="copy">
+<input type="submit" name="paste" onclick="show()" value="paste">
 </form>
 </body>
 <script>
     var x
-    // var y
+    var y
+    // var z
   function fun1() {
-      x = f.x.value
-      f.x.value=""
+      // x = document.getElementById('x').value;
+      // f.x.value=""
+
+
 
   }
   function fun2() {
-      // y = f.y.value
-      // f.y.value=""
+      x = document.getElementById('x').value;
   }
   function show() {
-
-        alert(x)
-  }
+        var temp = document.getElementById('x').value;
+        if (x!=null){
+            alert()
+        }
+    }
 
 </script>
 </html>
+
